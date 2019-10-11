@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>The Mindful Day</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CreativeProject2/styles.css">
+
+</head>
+
+<body>
+    <img id="test" src="">
+    <div id="overlayText">
+        <h1 id="overlay">Welcome to another beautiful fall day</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>This is column 1</h1>
+            </div>
+            <div id="column2" class="col">
+                <h3>I am...</h3>
+                <ul>
+                    <li v-for="iAm in iAms">
+                        <!--<button v-on:click="deleteItem(iAm)" class="delete">X</button>-->
+                        <label>{{ iAm.text }}</label>
+                    </li>
+                </ul>
+                <form v-on:submit.prevent="addIAm">
+                    <input type="text" v-model="nextIAm">
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class="col">
+                <h1>This is column 3</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="fixed">
+        <br id="smallFooterBreak">
+        <a id="github" href="https://github.com/BYUCS260/lab2-javascript-XanderTG">Github</a>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+    <script text="type/javascript" src="/CreativeProject2/script.js"></script>
+</body>
+
+
+
+</html>

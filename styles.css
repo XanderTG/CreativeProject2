@@ -1,0 +1,67 @@
+body {
+    background-color: #ffe8c4;
+}
+
+.delete {
+    display: none;
+    margin-left: auto;
+}
+
+li:hover .delete {
+    display: block;
+}
+
+#overlayText {
+    font-size: 27px;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-align: center;
+    left: 25%;
+    top: -300px;
+    width: 50%;
+}
+
+#test {
+    object-fit: cover;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 110%;
+    height: 350px;
+    opacity: 1;
+}
+
+#overlay {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.row {
+    margin-top: -100px;
+    width: 110%;
+}
+
+#footer {
+    display: block;
+    width: 100%;
+    background-color: #874d49;
+    color: white;
+    text-align: center;
+    height: 60px;
+}
+
+#github {
+    color: white;
+    font-size: 16px;
+}
